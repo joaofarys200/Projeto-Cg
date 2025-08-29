@@ -1,0 +1,179 @@
+<world> 
+    <window width="800" height="800" />
+    <camera> 
+	    <position x="40" y="200" z="-395" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> <!-- optional, use these values as default-->
+        <projection fov="45" near="1" far="1000" /> <!-- optional, use these values as default-->
+    </camera>
+
+    <group>
+        <group> <!-- SUN -->
+            <transform> 
+                <scale x="5.5" y="5.5" z="5.5" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+        </group>
+        <group> <!-- MERCÚRIO -->
+            <transform> 
+            	<rotate angle="45" x="0" y="1" z="0" /> 
+            	<translate x="45" y="0" z="45" />
+                <scale x="0.23" y="0.23" z="0.23" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+        </group>
+        <group> <!-- VÉNUS -->
+            <transform> 
+            	<translate x="55" y="0" z="55" />
+                <scale x="0.32" y="0.32" z="0.32" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>		
+        </group>
+        <group> <!-- TERRA -->
+            <transform>
+            	<rotate angle="17" x="0" y="1" z="0" /> 
+            	<translate x="65" y="0" z="65" />
+                <scale x="0.35" y="0.35" z="0.35" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+			<group> <!-- LUA -->
+    			<transform> 
+    				<translate x="20" y="20" z="20" />
+    				<scale x="0.23" y="0.23" z="0.23" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>						
+        </group>
+        <group> <!-- MARTE -->
+            <transform> 
+            	<rotate angle="73" x="0" y="1" z="0" />
+            	<translate x="75" y="0" z="75" />
+                <scale x="0.29" y="0.29" z="0.29" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+			<group> <!-- MARTE LUA -->
+    			<transform> 
+    				<translate x="17" y="17" z="17" />
+    				<scale x="0.4" y="0.4" z="0.4" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>
+        </group>
+        <group> <!-- JÚPITER -->
+            <transform> 
+            	<rotate angle="-137" x="0" y="1" z="0" />
+            	<translate x="100" y="0" z="100" />
+                <scale x="0.9" y="0.9" z="0.9" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+			<group> <!-- JÚPITER LUA 1 -->
+    			<transform> 
+    				<translate x="13" y="13" z="13" />
+    				<scale x="0.1" y="0.1" z="0.1" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>
+			<group> <!-- JÚPITER LUA 2 -->
+    			<transform> 
+    				<translate x="-10" y="-10" z="10" />
+    				<scale x="0.07" y="0.07" z="0.07" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>
+			<group> <!-- JÚPITER LUA 3 -->
+    			<transform> 
+    				<translate x="-15" y="15" z="-15" />
+    				<scale x="0.12" y="0.12" z="0.12" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>						
+        </group>
+        <group> <!-- SATURNO -->
+            <transform>
+            	<rotate angle="295" x="0" y="1" z="0" /> 
+            	<translate x="150" y="0" z="150" />
+                <scale x="0.88" y="0.88" z="0.88" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+			<group> <!-- SATURNO ANEL -->
+    			<transform> 
+    				<rotate angle="-15" x="1" y="0" z="1" />
+    			</transform>
+					<models> 
+						<model file="torus_15_14_20_20.3d" /> <!-- ./generator torus 15 14 20 20 torus_15_14_20_20.3d -->
+					</models>
+			</group>
+			<group> <!-- SATURNO LUA -->
+    			<transform> 
+    				<translate x="-13" y="13" z="-13" />
+    				<scale x="0.1" y="0.1" z="0.1" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>				
+        </group>
+        <group> <!-- URANO -->
+            <transform>
+            	<rotate angle="148" x="0" y="1" z="0" /> 
+            	<translate x="200" y="0" z="200" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+			<group> <!-- URANO LUA -->
+    			<transform> 
+    				<translate x="15" y="15" z="0" />
+    				<scale x="0.11" y="0.11" z="0.11" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>			
+        </group>
+        <group> <!-- NEPTUNO -->
+            <transform>
+            	<rotate angle="100" x="0" y="1" z="0" /> 
+            	<translate x="250" y="0" z="250" />
+                <scale x="0.79" y="0.79" z="0.79" />
+            </transform>
+			<models> 
+				<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+			</models>
+			<group> <!-- NEPTUNO LUA -->
+    			<transform> 
+    				<translate x="15" y="-15" z="-15" />
+    				<scale x="0.13" y="0.13" z="0.13" />
+    			</transform>
+					<models> 
+						<model file="sphere_10_20_20.3d" /> <!-- ./generator sphere 10 20 20 sphere_10_20_20.3d -->
+					</models>
+			</group>			
+        </group>
+    </group>
+</world>
